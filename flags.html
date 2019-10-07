@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Flags - Feature Set 1</title>
+  <style>
+
+.flag-container {
+  width: 40vw;
+  height: 25vw;
+  border: 1px black solid;
+  margin-bottom: 20px;
+}
+.flag-flex-container {
+  display: flex;
+  width: 40vw;
+  height: 25vw;
+  border: 1px black solid;
+  margin-bottom: 20px;
+}
+.flag-inlineblock-container {
+  width: 40vw;
+  height: 25vw;
+  border: 1px black solid;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+.flag-square-container {
+  width: 40vw;
+  height: 40vw;
+  border: 1px black solid;
+  margin-bottom: 20px;
+}
+
+.indonesia-red {
+  background-color: red;
+  height: 180px;
+}
+.indonesia-white {
+  background-color: white;
+  height: 180px;
+}
+
+.columbia-yellow {
+  height: 50%;
+  background-color: gold;
+}
+.columbia-blue {
+  height: 25%;
+  background-color: darkblue;
+}
+.columbia-red {
+  height: 25%;
+  background-color: red;
+}
+
+.ireland-green {
+  background-color: green;
+  width: 100%
+}
+.ireland-white {
+  background-color: white;
+  width: 100%;
+}
+.ireland-orange {
+  background-color: orange;
+  width: 100%;
+}
+
+.france-blue {
+  display: inline-block;
+  width: 33.33%;
+  height: 100%;
+  background-color: darkblue;
+}
+.france-white {
+  display: inline-block;
+  width: 33.33%;
+  height: 100%;
+  background-color: white;
+}
+.france-red {
+  display: inline-block;
+  width: 33.33%;
+  height: 100%;
+  background-color: darkred;
+}
+
+.benin-verticalcontainer1 {
+  width: 40%;
+  height: 100%;
+  float: left;
+  background-color: darkgreen;
+}
+.benin-verticalcontainer2 {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+.benin-gold {
+  width: 100%;
+  height: 50%;
+  background-color: gold;
+}
+.benin-red {
+  width: 100%;
+  height: 50%;
+  background-color: firebrick;
+}
+
+.sweeden-bg {
+  position: relative;
+  height: 100%;
+  background-color: blue;
+}
+.sweeden-vertical {
+  position: absolute;
+  height: 100%;
+  width: 6vw;
+  left: 30%;
+  background-color: gold;
+}
+.sweeden-horizontal {
+  position: absolute;
+  height: 6vw;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: gold;
+}
+
+.switzerland-bg {
+  position: relative;
+  height: 100%;
+  background-color: red;
+}
+.switzerland-vertical {
+  position: absolute;
+  height: 65%;
+  width: 8vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+}
+.switzerland-horizontal {
+  position: absolute;
+  height: 8vw;
+  width: 65%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+}
+
+.tonga-container {
+  position: relative;
+  background-color: firebrick;
+  height: 100%;
+  width: 100%;
+}
+.tonga-cross-container {
+  position: absolute;
+  height: 50%;
+  width: 45%;
+  background-color: white;
+}
+.tonga-vertical {
+  position: absolute;
+  height: 80%;
+  width: 3vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: firebrick;
+}
+.tonga-horizontal {
+  position: absolute;
+  height: 3vw;
+  width: 55%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: firebrick;
+}
+
+.japan-circle {
+  background-color: firebrick;
+  border-radius: 50%;
+  margin: auto;
+  height: 15vw;
+  width: 15vw;
+}
+
+.canada-container {
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+}
+.canada-red {
+  display: inline-block;
+  width: 28%;
+  height: 100%;
+  background-color: firebrick;
+}
+.canada-white {
+  display: inline-block;
+  position: relative;
+  width: 44%;
+  height: 100%;
+  background-color: white;
+}
+.canada-white::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 70%;
+  background-image: url("assets/images/canada_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateZ(28deg);
+  top: 25%;
+}
+
+.norway-bg {
+  position: relative;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+.norway-horizontal-white {
+  position: absolute;
+  background-color: white;
+  height: 7vw;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.norway-vertical-white {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 7vw;
+  left: 30%;
+}
+.norway-horizontal-navy {
+  position: absolute;
+  background-color: navy;
+  height: 3.25vw;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.norway-vertical-navy {
+  position: absolute;
+  background-color: navy;
+  height: 100%;
+  width: 3.25vw;
+  left: 34.7%;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="flag-container">
+    <div class="indonesia-red"></div>
+    <div class="indonesia-white"></div>
+  </div>
+    
+  <div class="flag-container">
+    <div class="columbia-yellow"></div>
+    <div class="columbia-blue"></div>
+    <div class="columbia-red"></div>
+  </div>
+  
+  <div class="flag-flex-container">
+    <div class="ireland-green"></div>
+    <div class="ireland-white"></div>
+    <div class="ireland-orange"></div>
+  </div>
+    
+  <div class="flag-inlineblock-container">
+    <div class="france-blue"></div>
+    <div class="france-white"></div>
+    <div class="france-red"></div>
+  </div>
+  
+  <div class="flag-container">
+    <div class="benin-verticalcontainer1"></div>
+    <div class="benin-verticalcontainer2">
+      <div class="benin-gold"></div>
+      <div class="benin-red"></div>
+    </div>
+  </div>
+
+  <div class="flag-container">
+    <div class="sweeden-bg">
+      <div class="sweeden-vertical"></div>
+      <div class="sweeden-horizontal"></div>  
+    </div>
+  </div>
+
+  <div class="flag-square-container">
+    <div class="switzerland-bg">
+      <div class="switzerland-vertical"></div>
+      <div class="switzerland-horizontal"></div>  
+    </div>
+  </div>
+
+  <div class="flag-container">
+    <div class="tonga-container">
+      <div class="tonga-cross-container">
+        <div class="tonga-vertical"></div>
+        <div class="tonga-horizontal"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flag-flex-container">
+    <div class="japan-circle"></div>
+  </div>
+
+  <div class="flag-container">
+    <div class="canada-container">
+      <div class="canada-red"></div>
+      <div class="canada-white"></div>
+      <div class="canada-red"></div>
+    </div>
+  </div>
+
+  <div class="flag-container">
+    <div class="norway-bg">
+      <div class="norway-horizontal-white"></div>
+      <div class="norway-vertical-white"></div>
+      <div class="norway-horizontal-navy"></div>
+      <div class="norway-vertical-navy"></div>
+    </div>
+  </div>
+
+</body>
+</html>
