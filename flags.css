@@ -1,20 +1,156 @@
 /* Indonesia */
+.indo-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+}
+.indo-horizontal-red {
+  height: 75px;
+  background-color: red;
+}
+.indo-horizontal-white {
+  height: 75px;
+  background-color: white;
+}
 
 /* Colombia */
+.columbia-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+}
+.columbia-horizontal-1 {
+  height: 50%;
+  background-color: gold;
+}
+.columbia-horizontal-2 {
+  height: 25%;
+  background-color: blue;
+}
+.columbia-horizontal-3 {
+  height: 25%;
+  background-color: red;
+}
 
 /* Ireland */
+.ireland-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+  display: flex;
+}
+.ireland-vertical-1 {
+  width: 100%;
+  background-color: forestgreen;
+}
+.ireland-vertical-2 {
+  width: 100%;
+  background-color: white;
+}
+.ireland-vertical-3 {
+  width: 100%;
+  background-color: orange;
+}
 
 /* France */
+.france-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+  font-size: 0;
+}
+.france-vert-1 {
+  display: inline-block;
+  background-color: darkblue;
+  width: 33.33%;
+  height: 100%;
+}
+.france-vert-2 {
+  display: inline-block;
+  background-color: white;
+  width: 33.33%;
+  height: 100%;
+}
+.france-vert-3 {
+  display: inline-block;
+  background-color: darkred;
+  width: 33.33%;
+  height: 100%;
+}
 
 /* Benin */
+.benin-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+}
+.benin-vert-1 {
+  background-color: forestgreen;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+.benin-vert-2 {
+  width: 66.67%;
+  height: 100%;
+  float: left;
+}
+.benin-vert-2-yellow {
+  background-color: gold;
+  height: 50%;
+}
+.benin-vert-2-red {
+  background-color: red;
+  height: 50%;
+}
 
 /* Sweden */
+.sweeden-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+  background-color: steelblue;
+  position: relative;
+}
+.sweeden-cross-horizontal {
+  height: 20%;
+  width: 100%;
+  top: 40%;
+  position: absolute;
+  background-color: gold;
+}
+.sweeden-cross-vertical {
+  height: 100%;
+  width: 12%;
+  left: 27%;
+  position: absolute;
+  background-color: gold;
+}
 
 /* Switzerland */
 
 /* Tonga */
 
 /* Japan */
+.japan-container {
+  width: 300px;
+  height: 150px;
+  border: 1px black solid;
+  margin-top: 25px;
+  display: flex;
+}
+.japan-circle {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+}
 
 /* Canada */
 
